@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+      <!--<script src="JS/Calculator.js" defer></script>-->  
+    </head>
+    <body>
+        <p>Число X: <input type="text" id="x"></p>
+        <p>Число Y: <input type="text" id="y"></p>
+        <button onclick="sum()">Додати</button>
+        <button onclick="subtract()">Відняти</button>
+        <hr>
+        <p id="out">Результат:</p>
+
+    </body>
+    <script>
+    function sum()
+        {
+            let num1, num2, result;
+            num1 = document.getElementById('x').value;
+            num1 = parseInt(num1);
+        
+            num2 = document.getElementById('y').value;
+            num2 = parseInt(num2);
+        
+            result = num1 + num2;
+            document.getElementById('out').innerHTML = result;
+        }
+        
+        function subtract()
+        {
+            let num1, num2, result;
+            num1 = document.getElementById('x').value;
+            num1 = parseInt(num1);
+        
+            num2 = document.getElementById('y').value;
+            num2 = parseInt(num2);
+            result = num1 - num2;
+            document.getElementById('out').innerHTML = result;
+        }
+        </script>
+</html>
